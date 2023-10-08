@@ -4,6 +4,57 @@
     box-sizing: border-box;
 }
 
+body {
+	background: url('https://cdn.wallpapersafari.com/16/59/lNAD4K.jpg');
+	background-attachment: fixed;
+	font-family: Helvetica,Arial,sans-serif;
+	background-repeat: no-repeat;
+	background-size: 100%;
+    color: #fff;
+}
+
+h2 {
+	font-size: 3em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+li{
+    list-style: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding: .6rem;
+}
+
+.logo{
+    text-decoration: none;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu-container{
+    display: flex;
+    align-items: center;
+}
+
+.menu-item{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-item:hover{
+    color: #ccc;
+    font-size: 1.1rem;
+}
+
 .container {
     position: relative;
     padding: 15px;
