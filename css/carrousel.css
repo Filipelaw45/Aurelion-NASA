@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 .container {
     position: relative;
     padding: 15px;
@@ -28,10 +27,22 @@
     width: 40px;
     color: #fff;
     transition: all 600ms ease-in-out;
-    background: linear-gradient(to left, transparent 0%, black 200%);
+    background: transparent;
     opacity: 0.1;
     cursor: pointer;
     border: none;
+}
+
+.btn-card{
+    font-weight: bold;
+    padding: 1rem;
+    border: 1px solid white;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.btn-card:hover{
+    cursor: pointer;
 }
 
 .arrow-left:hover,
@@ -39,11 +50,17 @@
     opacity: 1;
 }
 
+.arrow-left:focus,
+.arrow-right:focus {
+    border: none;
+    outline: 0;
+}
+
 .arrow-right {
     right: 0;
     left: auto;
     text-align: right;
-    background: linear-gradient(to right, transparent 0%, black 200%);
+    background: transparent;
 }
 
 .gallery {
@@ -54,28 +71,46 @@
 
 .item {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    
-    flex-direction: row;
     width: 100%;
     flex-shrink: 0;
     transition: all 600ms ease-in-out;
     opacity: 0.5;
 }
 
+.card-link{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem 0;
+    color: white;
+    text-decoration: none;
+}
+
+.card-link:hover{
+    color: white;
+    text-decoration: none;
+}
+
 .carrousel-text{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 1rem 0;
     color: white;
     margin: 1rem;
 }
 
 .tips-container{
     display: flex;
+    align-items: baseline;
     justify-content: space-between;
+    gap: 1rem 0;
+    text-align: center;
 }
 
 .tips{
     display: flex;
+    width: 25%;
     flex-direction: column;
 }
 
@@ -87,6 +122,10 @@
     width: 50%;
 }
 
+.img-card{
+    width: 100%;
+}
+
 .carrousel-js{
     display: flex;
     justify-content: center;
@@ -95,10 +134,6 @@
     width: 100%;
 }
 
-.item:hover{
-    width: 100%;
-    cursor: pointer
-}
 
 .current-item {
     opacity: 1;
